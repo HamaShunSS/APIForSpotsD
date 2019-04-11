@@ -1,2 +1,1 @@
-# APIForSpotsD
-API for Spots
+# smart-brain
