@@ -1,0 +1,2 @@
+# APIForSpotsD
+API for Spots
