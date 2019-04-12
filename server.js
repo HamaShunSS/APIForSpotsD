@@ -14,10 +14,8 @@ const search = require('./controller/search');
 const db = knex({
     client: 'pg',
     connection: {
-        host : 'postgresql-amorphous-34109',
-        user : '',
-        password : '',
-        database : 'smart-brain'
+        host : process.env.DATABASE_URL,
+        ssl: true,
     }
 });
 
