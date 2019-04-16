@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1aaa2cde-df22-4655-8f99-9c1433af4dc8" name="Default Changelist" comment="" />
+    <list default="true" id="1aaa2cde-df22-4655-8f99-9c1433af4dc8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -22,7 +24,7 @@
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+              <caret column="18" selection-start-column="18" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -174,12 +176,12 @@
       <workItem from="1555182973998" duration="529000" />
       <workItem from="1555183899919" duration="665000" />
       <workItem from="1555446778549" duration="1419000" />
-      <workItem from="1555449744712" duration="233000" />
+      <workItem from="1555449744712" duration="493000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12749000" />
+    <option name="totallyTimeSpent" value="13009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="768" y="23" width="672" height="797" extended-state="0" />
@@ -255,7 +257,7 @@
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
