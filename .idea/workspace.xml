@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1aaa2cde-df22-4655-8f99-9c1433af4dc8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/spots-for-sjsu-students" beforeDir="false" afterPath="$PROJECT_DIR$/spots-for-sjsu-students" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spots-for-sjsu-students/controller/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/spots-for-sjsu-students/controller/register.js" afterDir="false" />
-    </list>
+    <list default="true" id="1aaa2cde-df22-4655-8f99-9c1433af4dc8" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -16,24 +13,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="897">
+            <state relative-caret-position="380">
               <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spots-for-sjsu-students/package.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spots-for-sjsu-students/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-622" />
+            <state relative-caret-position="-617" />
           </provider>
         </entry>
       </file>
@@ -47,7 +39,16 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spots-for-sjsu-students/controller/search.js">
+        <entry file="file://$PROJECT_DIR$/controller/register.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/search.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -88,7 +89,7 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/spots-for-sjsu-students" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -97,6 +98,7 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/spots-for-sjsu-students/controller/register.js" />
+        <option value="$PROJECT_DIR$/controller/register.js" />
       </list>
     </option>
   </component>
@@ -122,7 +124,7 @@
             <path>
               <item name="APIForSpotsD" type="b2602c69:ProjectViewProjectNode" />
               <item name="APIForSpotsD" type="462c0819:PsiDirectoryNode" />
-              <item name="spots-for-sjsu-students" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -175,12 +177,12 @@
       <workItem from="1555689764973" duration="46000" />
       <workItem from="1556247148576" duration="69000" />
       <workItem from="1556602248941" duration="3138000" />
-      <workItem from="1556605625010" duration="1217000" />
+      <workItem from="1556605625010" duration="1557000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19681000" />
+    <option name="totallyTimeSpent" value="20021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="691" height="797" extended-state="0" />
@@ -219,23 +221,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/search.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="897">
-          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -278,7 +263,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spots-for-sjsu-students/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-622" />
+        <state relative-caret-position="-617" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/search.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+        </state>
       </provider>
     </entry>
   </component>
