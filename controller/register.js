@@ -1,5 +1,5 @@
 const handleRegister =(req, res, db)=> {
-    const { name, location, url, rate, ramen, food, view, cafe, park, club, bar, study, hiking, shopping, beauty, comments } = req.body;
+    const { name, location, url, price, ramen, food, view, cafe, park, club, bar, study, hiking, shopping, beauty, comments } = req.body;
     if (!name || !location || !comments){
         return res.status(400).json('incorrect form submission');
     }
@@ -7,7 +7,7 @@ const handleRegister =(req, res, db)=> {
             name: name,
             location: location,
             url: url,
-            rate: rate,
+            price: price,
             ramen: ramen,
             food: food,
             view: view,
