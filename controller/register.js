@@ -26,6 +26,7 @@ const handleRegister =(req, res, db)=> {
         })
         .then
         (res.json('success'))
+    console.log('バックエンドのregion は　',region)
     }
 
 

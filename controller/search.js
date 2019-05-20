@@ -8,8 +8,8 @@ const handleSearch = (req, res, db)=> {
 }
 
 const handleInfo = (req, res, db)=> {
-    const { category } = req.body;
-    db.select('*').from('spots').where(category, '=', true) // .where({id}) means where id in db matches id from req
+    const { category, reg } = req.body;
+    db.select('*').from('spots').where(category, '=', true ).andWhere(reg, '=', region) // .where({id}) means where id in db matches id from req
         .then(info => {
             res.json(info); // by having [0] here, the response will be just {}
             }
