@@ -10,6 +10,7 @@ const profile = require('./controller/profile');
 const image = require('./controller/image');
 
 const search = require('./controller/search');
+const button = require('./controller/button');
 
 const db = knex({
     client: 'pg',
@@ -34,6 +35,7 @@ app.put('/image', (req, res) => { image.handleImage(req, res, db)});
 app.post('/imageurl', (req, res) => { image.handleApiCall(req, res)}); // create a new end point '/imageurl'
 
 app.post('/places', (req, res) => { search.handleInfo(req, res, db) }); //this is the server
+app.put('/button', (req, res) => { button.handleIine(req, res, db)});
 
 app.listen(process.env.PORT || 3000, ()=> {
     console.log(`app is running on port 3000 ${process.env.PORT}`);
