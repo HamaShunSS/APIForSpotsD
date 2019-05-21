@@ -3,9 +3,7 @@ const handleIine = (req, res, db)=> { // put is for update ex) update counts for
     db.select('*').from('spots').where('id', '=', id)
         .increment('iine', 1)
         .returning('iine')
-        .then(entries => {
-            res.json(entries);
-        })
+        .then((res.json('success')))
         .catch(err => res.status(400).json('unable to get entries'))
 }
 
