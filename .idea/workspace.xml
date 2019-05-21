@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aaa2cde-df22-4655-8f99-9c1433af4dc8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/button.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spots-for-sjsu-students" beforeDir="false" afterPath="$PROJECT_DIR$/spots-for-sjsu-students" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spots-for-sjsu-students/controller/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/spots-for-sjsu-students/controller/register.js" afterDir="false" />
     </list>
@@ -50,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/controller/button.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -77,8 +74,8 @@
         <option value="$PROJECT_DIR$/controller/search.js" />
         <option value="$PROJECT_DIR$/controller/Button.js" />
         <option value="$PROJECT_DIR$/controller/image.js" />
-        <option value="$PROJECT_DIR$/controller/button.js" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/controller/button.js" />
       </list>
     </option>
   </component>
@@ -168,16 +165,15 @@
       <workItem from="1558382061132" duration="599000" />
       <workItem from="1558392855434" duration="6874000" />
       <workItem from="1558421817324" duration="3696000" />
-      <workItem from="1558475928700" duration="1098000" />
+      <workItem from="1558475928700" duration="1449000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52537000" />
+    <option name="totallyTimeSpent" value="52888000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="721" height="797" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16428572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -296,7 +292,7 @@
     <entry file="file://$PROJECT_DIR$/controller/button.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
         </state>
       </provider>
     </entry>
