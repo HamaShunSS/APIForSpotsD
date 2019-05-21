@@ -36,6 +36,7 @@ app.post('/imageurl', (req, res) => { image.handleApiCall(req, res)}); // create
 
 app.post('/places', (req, res) => { search.handleInfo(req, res, db) }); //this is the server
 app.put('/button', (req, res) => { button.handleIine(req, res, db)});
+app.put('/buttonW', (req, res) => { button.handleWaruiine(req, res, db)});
 
 app.listen(process.env.PORT || 3000, ()=> {
     console.log(`app is running on port 3000 ${process.env.PORT}`);
