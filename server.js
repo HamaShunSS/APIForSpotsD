@@ -11,7 +11,7 @@ const image = require('./controller/image');
 
 const search = require('./controller/search');
 const button = require('./controller/button');
-const addComments = require('./controller/addComments');
+const addComments = require('./controller/addcomments');
 
 const db = knex({
     client: 'pg',
