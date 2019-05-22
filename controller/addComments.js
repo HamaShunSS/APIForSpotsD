@@ -2,7 +2,7 @@ const handleComments = (req, res, db)=> { // put is for update ex) update counts
     const { id, com} = req.body;
     db('spots').where('id', '=', id)
         .update({
-            comments: 'comments' || '    ' || com
+            comments: comments || '    ' || com
         })
         .then
         (res.json('success'))
