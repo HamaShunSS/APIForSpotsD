@@ -55,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/addComments.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="17" selection-start-column="17" selection-end-column="17" />
+            <state relative-caret-position="92">
+              <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -175,12 +175,12 @@
       <workItem from="1558382061132" duration="599000" />
       <workItem from="1558392855434" duration="6874000" />
       <workItem from="1558421817324" duration="3696000" />
-      <workItem from="1558475928700" duration="3924000" />
+      <workItem from="1558475928700" duration="4162000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55363000" />
+    <option name="totallyTimeSpent" value="55601000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="721" height="797" extended-state="0" />
@@ -308,8 +308,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/addComments.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        <state relative-caret-position="92">
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
         </state>
       </provider>
     </entry>
