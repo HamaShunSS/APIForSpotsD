@@ -24,5 +24,4 @@ const handleInfo = (req, res, db)=> {
 module.exports = {
     handleSearch: handleSearch,
     handleInfo: handleInfo,
-
 }
