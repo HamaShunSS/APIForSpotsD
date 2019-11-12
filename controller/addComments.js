@@ -1,9 +1,10 @@
 const handleComments = (req, res, db)=> { // put is for update ex) update counts for rank or update the profile
-    const { location, com, originalComments} = req.body;
-    db('spots').select('location', '=', location)
+    const { id, com, originalComments} = req.body;
+    db('spots').where('id', '=', id)
         .update({
             comments: com + " / " +  originalComments
         })
+        .returning('comments')
         .then
         (res.json('success'))
         .catch(err => res.status(400).json('unable to get entries'))
