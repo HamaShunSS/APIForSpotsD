@@ -13,6 +13,7 @@ const search = require('./controller/search');
 const button = require('./controller/button');
 const addComments = require('./controller/addComments');
 const allData = require('./controller/allData');
+const changeData = require('./controller/changeData');
 
 const db = knex({
     client: 'pg',
@@ -41,6 +42,7 @@ app.put('/button', (req, res) => { button.handleIine(req, res, db)});
 app.put('/buttonW', (req, res) => { button.handleWaruiine(req, res, db)});
 app.put('/addcomments', (req, res) => { addComments.handleComments(req, res, db)});
 app.get('/allData', (req, res) => { allData.handleAllData(req, res, db)});
+app.put('/changeData', (req, res) => { changeData.handleData(req, res, db)});
 
 app.listen(process.env.PORT || 3000, ()=> {
     console.log(`app is running on port 3000 ${process.env.PORT}`);
