@@ -13,7 +13,12 @@ const search = require('./controller/search');
 const button = require('./controller/button');
 const addComments = require('./controller/addComments');
 const allData = require('./controller/allData');
-const changeData = require('./controller/changeData');
+const changeComments = require('./controller/changeData');
+const changeURL = require('./controller/changeData');
+const changeName = require('./controller/changeData');
+const changeLocation = require('./controller/changeData');
+const changePrice = require('./controller/changeData');
+
 
 const db = knex({
     client: 'pg',
@@ -42,7 +47,12 @@ app.put('/button', (req, res) => { button.handleIine(req, res, db)});
 app.put('/buttonW', (req, res) => { button.handleWaruiine(req, res, db)});
 app.put('/addcomments', (req, res) => { addComments.handleComments(req, res, db)});
 app.get('/allData', (req, res) => { allData.handleAllData(req, res, db)});
-app.put('/changeData', (req, res) => { changeData.handleData(req, res, db)});
+app.put('/changeComments', (req, res) => { changeComments.handleComments(req, res, db)});
+app.put('/changeURL', (req, res) => { changeURL.handleURL(req, res, db)});
+app.put('/changeName', (req, res) => { changeName.handleName(req, res, db)});
+app.put('/changeLocation', (req, res) => { changeLocation.handleLocation(req, res, db)});
+app.put('/changePrice', (req, res) => { changePrice.handlePrice(req, res, db)});
+
 
 app.listen(process.env.PORT || 3000, ()=> {
     console.log(`app is running on port 3000 ${process.env.PORT}`);
