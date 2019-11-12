@@ -65,5 +65,4 @@ module.exports = {
     handleName: changeName,
     handleLocation: changeLocation,
     handlePrice: changePrice
-
 }
