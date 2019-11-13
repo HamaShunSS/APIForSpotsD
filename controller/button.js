@@ -20,8 +20,33 @@ const handleWaruiine = (req, res, db)=> { // put is for update ex) update counts
         .catch(err => res.status(400).json('unable to get entries'))
 }
 
+//減らす
+const handleIineD = (req, res, db)=> { // put is for update ex) update counts for rank or update the profile
+    const { id } = req.body;
+    db('spots').where('id', '=', id)
+        .decrement('iine', 1)
+        .returning('iine')
+        .then(iine => {
+            res.json(iine[0])
+        })
+        .catch(err => res.status(400).json('unable to get entries'))
+}
+
+const handleWaruiineD = (req, res, db)=> { // put is for update ex) update counts for rank or update the profile
+    const { id } = req.body;
+    db('spots').where('id', '=', id)
+        .decrement('waruiine', 1)
+        .returning('waruiine')
+        .then(waruiine => {
+            res.json(waruiine[0])
+        })
+        .catch(err => res.status(400).json('unable to get entries'))
+}
+
 
 module.exports = {
     handleIine: handleIine,
-    handleWaruiine: handleWaruiine
+    handleWaruiine: handleWaruiine,
+    handleIineD: handleIineD,
+    handleWaruiineD: handleWaruiineD
 }
