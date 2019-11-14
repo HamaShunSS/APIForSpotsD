@@ -8,12 +8,13 @@ const handleSignin = (req,res, db, bcrypt)=> {
         .then(data => {
             const isValid = bcrypt.compareSync(password, data[0].hash); // compare password from request with password(hashed) from db
             if (isValid){ // "if () {}" returns true or false
-                return db.select('*').from('users')
-                    .where('email', '=', email)
-                    .then(user => {
-                        res.json(user[0])
-                    })
-                    .catch(err => res.status(400).json('unable to get user'))
+                return res.json(email)
+                // return db.select('email').from('login')
+                //     .where('email', '=', email)
+                //     .then(user => {
+                //         res.json(user[0])
+                //     })
+                    .catch(err => res.status(400).json('isValidらへんの問題'))
             } else {
                 res.status(400).json('wrong credentials')
             }
