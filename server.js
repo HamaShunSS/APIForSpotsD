@@ -18,6 +18,7 @@ const changeURL = require('./controller/changeData');
 const changeName = require('./controller/changeData');
 const changeLocation = require('./controller/changeData');
 const changePrice = require('./controller/changeData');
+const touroku = require('./controller/touroku');
 
 
 const db = knex({
@@ -54,6 +55,7 @@ app.put('/changeURL', (req, res) => { changeURL.handleURL(req, res, db)});
 app.put('/changeName', (req, res) => { changeName.handleName(req, res, db)});
 app.put('/changeLocation', (req, res) => { changeLocation.handleLocation(req, res, db)});
 app.put('/changePrice', (req, res) => { changePrice.handlePrice(req, res, db)});
+app.post('/touroku', (req, res) => { touroku.handleTouroku(req, res, db, bcrypt) });
 
 
 app.listen(process.env.PORT || 3000, ()=> {
