@@ -18,6 +18,7 @@ const changeURL = require('./controller/changeData');
 const changeName = require('./controller/changeData');
 const changeLocation = require('./controller/changeData');
 const changePrice = require('./controller/changeData');
+const changeCategory = require('./controller/changeData');
 const touroku = require('./controller/touroku');
 
 
@@ -36,8 +37,7 @@ app.use(cors());
 
 app.get('/', (req, res) => { res.send('it is working!') });
 
-app.post('/signin', (req, res) => { signin.handleSignin(req, res, db, bcrypt);
-console.log(res)});
+console.log(res);
 app.post('/register', (req, res) => { register.handleRegister(req, res, db) });
 app.get('/profile/:id', (req, res) => { profile.handleProfileGet(req, res, db) });
 app.put('/image', (req, res) => { image.handleImage(req, res, db)});
@@ -51,13 +51,15 @@ app.put('/buttonWD', (req, res) => { button.handleWaruiineD(req, res, db)});
 app.put('/addcomments', (req, res) => { addComments.handleComments(req, res, db)});
 app.get('/allData', (req, res) => { allData.handleAllData(req, res, db)});
 app.put('/changeComments', (req, res) => { changeComments.handleComments(req, res, db)});
-app.put('/changeURL', (req, res) => { changeURL.handleURL(req, res, db)});
-app.put('/changeName', (req, res) => { changeName.handleName(req, res, db)});
-app.put('/changeLocation', (req, res) => { changeLocation.handleLocation(req, res, db)});
-app.put('/changePrice', (req, res) => { changePrice.handlePrice(req, res, db)});
+app.put('/changeURL', (req, res) => { changeURL.handleURL(req, res, db) });
+app.put('/changeName', (req, res) => { changeName.handleName(req, res, db) });
+app.put('/changeLocation', (req, res) => { changeLocation.handleLocation(req, res, db) });
+app.put('/changeCategory', (req, res) => { changeCategory.handleCategory(req, res, db) });
+app.put('/changePrice', (req, res) => { changePrice.handlePrice(req, res, db) });
 app.post('/touroku', (req, res) => { touroku.handleTouroku(req, res, db, bcrypt) });
+app.post('/signin', (req, res) => { signin.handleSignin(req, res, db, bcrypt) });
 
 
 app.listen(process.env.PORT || 3000, ()=> {
     console.log(`app is running on port 3000 ${process.env.PORT}`);
-})
+});
