@@ -33,11 +33,10 @@ const db = knex({
 const app = express();
 
 app.use(bodyParser.json());
-app.use(cors())
+app.use(cors());
 
 app.get('/', (req, res) => { res.send('it is working!') });
 
-console.log(res);
 app.post('/register', (req, res) => { register.handleRegister(req, res, db) });
 app.get('/profile/:id', (req, res) => { profile.handleProfileGet(req, res, db) });
 app.put('/image', (req, res) => { image.handleImage(req, res, db)});
@@ -57,9 +56,10 @@ app.put('/changeLocation', (req, res) => { changeLocation.handleLocation(req, re
 app.put('/changeCategory', (req, res) => { changeCategory.handleCategory(req, res, db) });
 app.put('/changePrice', (req, res) => { changePrice.handlePrice(req, res, db) });
 app.post('/touroku', (req, res) => { touroku.handleTouroku(req, res, db, bcrypt) });
-app.post('/signin', (req, res) => { signin.handleSignin(req, res, db, bcrypt) });
+app.post('/signin', (req, res) => { signin.handleSignin(req, res, db, bcrypt)
+console.log(res)});
 
 
 app.listen(process.env.PORT || 3000, ()=> {
     console.log(`app is running on port 3000 ${process.env.PORT}`);
-});
+})
