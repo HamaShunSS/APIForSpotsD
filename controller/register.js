@@ -1,10 +1,11 @@
 const handleRegister =(req, res, db)=> {
-    const { name, location, url, price, region, ramen, food, view, cafe, hobby, club, bar, study, nature, shopping, beauty, kankou, others, comments } = req.body;
+    const { name, category, location, url, price, region, ramen, food, view, cafe, hobby, club, bar, study, nature, shopping, beauty, kankou, others, comments } = req.body;
     if (!name || !location || !comments){
         return res.status(400).json('incorrect form submission');
     }
     db('spots').insert({ // use "trx" instead of db from here
             name: name,
+            category: category,
             location: location,
             url: url,
             price: price,
