@@ -20,6 +20,7 @@ const changeLocation = require('./controller/changeData');
 const changePrice = require('./controller/changeData');
 const changeCategory = require('./controller/changeData');
 const touroku = require('./controller/touroku');
+const sui = require('./controller/sui');
 
 
 const db = knex({
@@ -58,6 +59,7 @@ app.put('/changePrice', (req, res) => { changePrice.handlePrice(req, res, db) })
 app.post('/touroku', (req, res) => { touroku.handleTouroku(req, res, db, bcrypt) });
 app.post('/signin', (req, res) => { signin.handleSignin(req, res, db, bcrypt)
 console.log(res)});
+app.post('/sui', (req, res) => { sui.handleSUI(req, res, db) });
 
 
 app.listen(process.env.PORT || 3000, ()=> {
