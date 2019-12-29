@@ -39,7 +39,7 @@ app.use(cors());
 app.get('/', (req, res) => { res.send('it is working!') });
 
 app.post('/register', (req, res) => { register.handleRegister(req, res, db) });
-app.post('/profile/:id', (req, res) => { profile.handleProfileGet(req, res, db) });
+app.post('/profile', (req, res) => { profile.handleProfileGet(req, res, db) }); //本当は /profile/:id
 app.put('/image', (req, res) => { image.handleImage(req, res, db)});
 app.post('/imageurl', (req, res) => { image.handleApiCall(req, res)}); // create a new end point '/imageurl'
 
