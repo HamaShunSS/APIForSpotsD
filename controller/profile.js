@@ -1,6 +1,6 @@
 const handleProfileGet = (req, res, db)=> {
-    const { id } = req.body;
-    db.select('*').from('login').where('id', '=', id)// .where({id}) means where id in db matches id from req
+    const { email } = req.body;
+    db.select('*').from('login').where('email', '=', email)// .where({id}) means where id in db matches id from req
         .then(user => {
             if (user.length){
                 res.json(user[0]); // by having [0] here, the response will be just {}
