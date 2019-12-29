@@ -1,4 +1,4 @@
-const handleUser = (req,res, db, bcrypt)=> {
+const handleUser = (req,res, db)=> {
     const { email } = req.body;
     db.select('*').from('login')
         .where('email', '=', email)
