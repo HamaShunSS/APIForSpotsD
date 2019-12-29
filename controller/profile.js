@@ -1,4 +1,4 @@
-const handleProfileGet = (req, res, db)=> {
+const handleProfilePost = (req, res, db)=> {
     const { email } = req.body;
     db.select('*').from('login').where('email', '=', email)// .where({id}) means where id in db matches id from req
         .then(user => {
@@ -12,5 +12,5 @@ const handleProfileGet = (req, res, db)=> {
 }
 
 module.exports = {
-    handleProfileGet
+    handleProfilePost
 }

@@ -21,6 +21,7 @@ const changePrice = require('./controller/changeData');
 const changeCategory = require('./controller/changeData');
 const touroku = require('./controller/touroku');
 const sui = require('./controller/sui');
+const user = require('./controller/user');
 
 
 const db = knex({
@@ -39,7 +40,7 @@ app.use(cors());
 app.get('/', (req, res) => { res.send('it is working!') });
 
 app.post('/register', (req, res) => { register.handleRegister(req, res, db) });
-app.post('/profile', (req, res) => { profile.handleProfileGet(req, res, db) }); //本当は /profile/:id
+app.post('/profile', (req, res) => { profile.handleProfilePost(req, res, db) }); //本当は /profile/:id
 app.put('/image', (req, res) => { image.handleImage(req, res, db)});
 app.post('/imageurl', (req, res) => { image.handleApiCall(req, res)}); // create a new end point '/imageurl'
 
@@ -60,6 +61,7 @@ app.post('/touroku', (req, res) => { touroku.handleTouroku(req, res, db, bcrypt)
 app.post('/signin', (req, res) => { signin.handleSignin(req, res, db, bcrypt)
 console.log(res)});
 app.post('/sui', (req, res) => { sui.handleSUI(req, res, db) });
+app.post('/user', (req, res) => { user.handleUser(req, res, db) });
 
 
 app.listen(process.env.PORT || 3000, ()=> {
