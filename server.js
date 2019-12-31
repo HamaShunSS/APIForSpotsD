@@ -52,6 +52,7 @@ app.put('/buttonD', (req, res) => { button.handleIineD(req, res, db)});
 app.put('/buttonWD', (req, res) => { button.handleWaruiineD(req, res, db)});
 app.put('/addcomments', (req, res) => { addComments.handleComments(req, res, db)});
 app.get('/allData', (req, res) => { allData.handleAllData(req, res, db)});
+app.get('/allUsers', (req, res) => { allData.handleAllUsers(req, res, db)});
 app.put('/changeComments', (req, res) => { changeComments.handleComments(req, res, db)});
 app.put('/changeURL', (req, res) => { changeURL.handleURL(req, res, db) });
 app.put('/changeName', (req, res) => { changeName.handleName(req, res, db) });
@@ -60,7 +61,7 @@ app.put('/changeCategory', (req, res) => { changeCategory.handleCategory(req, re
 app.put('/changePrice', (req, res) => { changePrice.handlePrice(req, res, db) });
 app.post('/touroku', (req, res) => { touroku.handleTouroku(req, res, db, bcrypt) });
 app.post('/signin', (req, res) => { signin.handleSignin(req, res, db, bcrypt)
-console.log(res)});
+    console.log(res)});
 app.post('/sui', (req, res) => { sui.handleSUI(req, res, db) });
 app.post('/user', (req, res) => { user.handleUser(req, res, db) });
 app.del('/deleteInfo', (req, res) => { deleteInfo.handleDeleteInfo(req, res, db) });
