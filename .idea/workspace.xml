@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aaa2cde-df22-4655-8f99-9c1433af4dc8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/controller/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spots-for-sjsu-students" beforeDir="false" afterPath="$PROJECT_DIR$/spots-for-sjsu-students" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spots-for-sjsu-students/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spots-for-sjsu-students/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spots-for-sjsu-students/controller/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/spots-for-sjsu-students/controller/register.js" afterDir="false" />
@@ -20,8 +21,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1449">
+            <state relative-caret-position="368">
               <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/register.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -35,7 +45,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/profile.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
@@ -53,7 +63,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/touroku.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
@@ -65,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/signin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-45">
-              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+            <state relative-caret-position="101">
+              <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -124,12 +134,12 @@
         <option value="$PROJECT_DIR$/controller/update.js" />
         <option value="$PROJECT_DIR$/controller/changeData.js" />
         <option value="$PROJECT_DIR$/controller/sui.js" />
-        <option value="$PROJECT_DIR$/controller/register.js" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/controller/user.js" />
         <option value="$PROJECT_DIR$/controller/profile.js" />
-        <option value="$PROJECT_DIR$/controller/signin.js" />
         <option value="$PROJECT_DIR$/controller/touroku.js" />
+        <option value="$PROJECT_DIR$/controller/signin.js" />
+        <option value="$PROJECT_DIR$/controller/register.js" />
       </list>
     </option>
   </component>
@@ -270,18 +280,18 @@
       <workItem from="1577619259989" duration="329000" />
       <workItem from="1577648770503" duration="678000" />
       <workItem from="1577655249904" duration="786000" />
-      <workItem from="1577771792708" duration="1423000" />
+      <workItem from="1577771792708" duration="2295000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135562000" />
+    <option name="totallyTimeSpent" value="136434000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2182" y="43" width="853" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.102163464" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.102163464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -295,7 +305,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31204644" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31204644" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -425,38 +435,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/update.js" />
-    <entry file="file://$PROJECT_DIR$/controller/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/image.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1449">
-          <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -477,17 +459,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/signin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/touroku.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/signin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
         </state>
       </provider>
     </entry>
