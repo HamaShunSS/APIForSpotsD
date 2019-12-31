@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aaa2cde-df22-4655-8f99-9c1433af4dc8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/aws4/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/aws4/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/aws4/aws4.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/aws4/aws4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/aws4/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/aws4/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fast-json-stable-stringify/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fast-json-stable-stringify/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fast-json-stable-stringify/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fast-json-stable-stringify/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fast-json-stable-stringify/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fast-json-stable-stringify/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fast-json-stable-stringify/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fast-json-stable-stringify/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fast-json-stable-stringify/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/psl/data/rules.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/psl/data/rules.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/psl/dist/psl.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/psl/dist/psl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/psl/dist/psl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/psl/dist/psl.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/psl/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/psl/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/touroku.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/touroku.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spots-for-sjsu-students" beforeDir="false" afterPath="$PROJECT_DIR$/spots-for-sjsu-students" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spots-for-sjsu-students/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spots-for-sjsu-students/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spots-for-sjsu-students/controller/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/spots-for-sjsu-students/controller/register.js" afterDir="false" />
@@ -67,20 +54,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/touroku.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+            <state relative-caret-position="276">
+              <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/signin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+            <state relative-caret-position="-45">
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -135,7 +122,6 @@
         <option value="$PROJECT_DIR$/controller/addComments.js" />
         <option value="$PROJECT_DIR$/controller/button.js" />
         <option value="$PROJECT_DIR$/package-lock.json" />
-        <option value="$PROJECT_DIR$/controller/touroku.js" />
         <option value="$PROJECT_DIR$/controller/update.js" />
         <option value="$PROJECT_DIR$/controller/changeData.js" />
         <option value="$PROJECT_DIR$/controller/sui.js" />
@@ -144,6 +130,7 @@
         <option value="$PROJECT_DIR$/controller/user.js" />
         <option value="$PROJECT_DIR$/controller/profile.js" />
         <option value="$PROJECT_DIR$/controller/signin.js" />
+        <option value="$PROJECT_DIR$/controller/touroku.js" />
       </list>
     </option>
   </component>
@@ -159,7 +146,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,6 +162,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,16 +271,18 @@
       <workItem from="1577619259989" duration="329000" />
       <workItem from="1577648770503" duration="678000" />
       <workItem from="1577655249904" duration="786000" />
+      <workItem from="1577771792708" duration="1106000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134139000" />
+    <option name="totallyTimeSpent" value="135245000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="853" height="797" extended-state="0" />
+    <frame x="2182" y="43" width="853" height="797" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14903846" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.102163464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -307,7 +296,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3134978" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31204644" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -472,20 +461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/sui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/touroku.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/search.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -496,10 +471,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controller/sui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controller/signin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        <state relative-caret-position="-45">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/touroku.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
