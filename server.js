@@ -22,6 +22,7 @@ const changeCategory = require('./controller/changeData');
 const touroku = require('./controller/touroku');
 const sui = require('./controller/sui');
 const user = require('./controller/user');
+const deleteInfo = require('./controller/deleteInfo');
 
 
 const db = knex({
@@ -62,7 +63,7 @@ app.post('/signin', (req, res) => { signin.handleSignin(req, res, db, bcrypt)
 console.log(res)});
 app.post('/sui', (req, res) => { sui.handleSUI(req, res, db) });
 app.post('/user', (req, res) => { user.handleUser(req, res, db) });
-
+app.del('/deleteInfo', (req, res) => { deleteInfo.handleDeleteInfo(req, res, db) });
 
 app.listen(process.env.PORT || 3000, ()=> {
     console.log(`app is running on port 3000 ${process.env.PORT}`);
