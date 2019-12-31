@@ -70,6 +70,43 @@ const changeCategory = (req, res, db)=> { // put is for update ex) update counts
         .catch(err => res.status(400).json('unable to get entries'))
 }
 
+const changeUserName = (req, res, db)=> { // put is for update ex) update counts for rank or update the profile
+    const { id, newUserName} = req.body;
+    db('login').where('id', '=', id)
+        .update({
+            username: newUserName
+        })
+        .returning('username')
+        .then
+        (res.json('success'))
+        .catch(err => res.status(400).json('unable to get entries'))
+}
+
+const changeEmail = (req, res, db)=> { // put is for update ex) update counts for rank or update the profile
+    const { id, newEmail} = req.body;
+    db('login').where('id', '=', id)
+        .update({
+            email: newEmail
+        })
+        .returning('email')
+        .then
+        (res.json('success'))
+        .catch(err => res.status(400).json('unable to get entries'))
+}
+
+const changeCountry = (req, res, db)=> { // put is for update ex) update counts for rank or update the profile
+    const { id, newCountry} = req.body;
+    db('login').where('id', '=', id)
+        .update({
+            country: newCountry
+        })
+        .returning('country')
+        .then
+        (res.json('success'))
+        .catch(err => res.status(400).json('unable to get entries'))
+}
+
+
 
 module.exports = {
     handleComments: changeComments,
@@ -77,5 +114,8 @@ module.exports = {
     handleName: changeName,
     handleLocation: changeLocation,
     handleCategory: changeCategory,
-    handlePrice: changePrice
+    handlePrice: changePrice,
+    handleUserName: changeUserName,
+    handleEmail: changeEmail,
+    handleCountry: changeCountry
 }

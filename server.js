@@ -19,10 +19,14 @@ const changeName = require('./controller/changeData');
 const changeLocation = require('./controller/changeData');
 const changePrice = require('./controller/changeData');
 const changeCategory = require('./controller/changeData');
+const changeUserName = require('./controller/changeData');
+const changeEmail = require('./controller/changeData');
+const changeCountry = require('./controller/changeData');
 const touroku = require('./controller/touroku');
 const sui = require('./controller/sui');
 const user = require('./controller/user');
 const deleteInfo = require('./controller/deleteInfo');
+const deleteUser = require('./controller/deleteUser');
 
 
 const db = knex({
@@ -59,12 +63,16 @@ app.put('/changeName', (req, res) => { changeName.handleName(req, res, db) });
 app.put('/changeLocation', (req, res) => { changeLocation.handleLocation(req, res, db) });
 app.put('/changeCategory', (req, res) => { changeCategory.handleCategory(req, res, db) });
 app.put('/changePrice', (req, res) => { changePrice.handlePrice(req, res, db) });
+app.put('/changeUserName', (req, res) => { changeUserName.handleUserName(req, res, db) });
+app.put('/changeEmail', (req, res) => { changeEmail.handleEmail(req, res, db) });
+app.put('/changeCountry', (req, res) => { changeCountry.handleCountry(req, res, db) });
 app.post('/touroku', (req, res) => { touroku.handleTouroku(req, res, db, bcrypt) });
 app.post('/signin', (req, res) => { signin.handleSignin(req, res, db, bcrypt)
     console.log(res)});
 app.post('/sui', (req, res) => { sui.handleSUI(req, res, db) });
 app.post('/user', (req, res) => { user.handleUser(req, res, db) });
 app.del('/deleteInfo', (req, res) => { deleteInfo.handleDeleteInfo(req, res, db) });
+app.del('/deleteUser', (req, res) => { deleteUser.handleDeleteUser(req, res, db) });
 
 app.listen(process.env.PORT || 3000, ()=> {
     console.log(`app is running on port 3000 ${process.env.PORT}`);
