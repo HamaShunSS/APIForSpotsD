@@ -9,7 +9,7 @@ const handleTouroku =(req, res, db, bcrypt)=> {
         email : email
     })
         .then
-        (res.json('success'))
+        (res.json(email))
 }
 
 
