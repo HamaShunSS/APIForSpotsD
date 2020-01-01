@@ -19,6 +19,11 @@ const changeName = require('./controller/changeData');
 const changeLocation = require('./controller/changeData');
 const changePrice = require('./controller/changeData');
 const changeCategory = require('./controller/changeData');
+const changeUserN = require('./controller/changeData');
+const changeC = require('./controller/changeData');
+const changeEnglish = require('./controller/changeData');
+const changeDate = require('./controller/changeData');
+
 const changeUserName = require('./controller/changeData');
 const changeEmail = require('./controller/changeData');
 const changeCountry = require('./controller/changeData');
@@ -63,6 +68,11 @@ app.put('/changeName', (req, res) => { changeName.handleName(req, res, db) });
 app.put('/changeLocation', (req, res) => { changeLocation.handleLocation(req, res, db) });
 app.put('/changeCategory', (req, res) => { changeCategory.handleCategory(req, res, db) });
 app.put('/changePrice', (req, res) => { changePrice.handlePrice(req, res, db) });
+app.put('/changeUserN', (req, res) => { changeUserN.changeUserN(req, res, db) });
+app.put('/changeC', (req, res) => { changeC.changeC(req, res, db) });
+app.put('/changeEnglish', (req, res) => { changeEnglish.changeEnglish(req, res, db) });
+app.put('/changeDate', (req, res) => { changeDate.changeDate(req, res, db) });
+
 app.put('/changeUserName', (req, res) => { changeUserName.handleUserName(req, res, db) });
 app.put('/changeEmail', (req, res) => { changeEmail.handleEmail(req, res, db) });
 app.put('/changeCountry', (req, res) => { changeCountry.handleCountry(req, res, db) });
