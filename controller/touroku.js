@@ -1,5 +1,5 @@
 const handleTouroku =(req, res, db, bcrypt)=> {
-    const { email, password, username, country } = req.body;
+    const { email, password, username, country, status } = req.body;
     const hash = bcrypt.hashSync(password);
     if (!email){
         return res.status(400).json('incorrect form submission');
@@ -8,7 +8,8 @@ const handleTouroku =(req, res, db, bcrypt)=> {
         hash: hash,
         email : email,
         username: username,
-        country: country
+        country: country,
+        status: status
     })
         .then
         (res.json({username, country, email}))

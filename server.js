@@ -25,6 +25,7 @@ const changeEnglish = require('./controller/changeData');
 const changeDate = require('./controller/changeData');
 
 const changeUserName = require('./controller/changeData');
+const changeStatus = require('./controller/changeData');
 const changeEmail = require('./controller/changeData');
 const changeCountry = require('./controller/changeData');
 const touroku = require('./controller/touroku');
@@ -74,6 +75,7 @@ app.put('/changeEnglish', (req, res) => { changeEnglish.changeEnglish(req, res, 
 app.put('/changeDate', (req, res) => { changeDate.changeDate(req, res, db) });
 
 app.put('/changeUserName', (req, res) => { changeUserName.handleUserName(req, res, db) });
+app.put('/changeStatus', (req, res) => { changeStatus.handleStatus(req, res, db) });
 app.put('/changeEmail', (req, res) => { changeEmail.handleEmail(req, res, db) });
 app.put('/changeCountry', (req, res) => { changeCountry.handleCountry(req, res, db) });
 app.post('/touroku', (req, res) => { touroku.handleTouroku(req, res, db, bcrypt) });
