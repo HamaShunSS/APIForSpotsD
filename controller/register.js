@@ -34,7 +34,7 @@ const handleRegister =(req, res, db)=> {
     }
 
 const handleInsert =(req, res, db)=> {
-    const { name, price, url, phone, location, photo1, photo2, photo3, lon, lat, bizid, comment, commentid, by, country, date, city } = req.body;
+    const { name, price, url, phone, location, photo1, photo2, photo3, lon, lat, bizid, comment, commentid, by, country, date } = req.body;
     if (!name || !comment){
         return res.status(400).json('incorrect form submission');
     }
@@ -54,8 +54,7 @@ const handleInsert =(req, res, db)=> {
         commentid: commentid,
         country: country,
         by: by,
-        date: date,
-        city: city
+        date: date
     })
         .then
         (res.json('success'))
