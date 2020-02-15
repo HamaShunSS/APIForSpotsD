@@ -33,6 +33,34 @@ const handleRegister =(req, res, db)=> {
         (res.json('success'))
     }
 
+const handleInsert =(req, res, db)=> {
+    const { name, price, url, phone, location, photo1, photo2, photo3, lon, lat, bizid, comment, commentid, by, country, date, city } = req.body;
+    if (!name || !comment){
+        return res.status(400).json('incorrect form submission');
+    }
+    db('spot').insert({ // use "trx" instead of db from here
+        name: name,
+        lon: lon,
+        lat: lat,
+        price: price,
+        url: url,
+        bizid: bizid,
+        phone: phone,
+        location: location,
+        photo1: photo1,
+        photo2: photo2,
+        photo3: photo3,
+        comment: comment,
+        commentid: commentid,
+        country: country,
+        by: by,
+        date: date,
+        city: city
+    })
+        .then
+        (res.json('success'))
+}
+
 
 
 // .into('spots')
@@ -48,5 +76,6 @@ const handleRegister =(req, res, db)=> {
 
 
 module.exports = {
-    handleRegister: handleRegister
+    handleRegister: handleRegister,
+    handleInsert: handleInsert
 };

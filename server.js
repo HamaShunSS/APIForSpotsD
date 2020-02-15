@@ -5,6 +5,7 @@ const cors = require('cors');
 const knex = require('knex');
 
 const register = require('./controller/register'); // destructure to .js file
+const insert = require('./controller/register');
 const signin = require('./controller/signin');
 const profile = require('./controller/profile');
 const image = require('./controller/image');
@@ -51,6 +52,7 @@ app.use(cors());
 app.get('/', (req, res) => { res.send('it is working!') });
 
 app.post('/register', (req, res) => { register.handleRegister(req, res, db) });
+app.post('/insert', (req, res) => { insert.handleInsert(req, res, db) });
 app.post('/profile', (req, res) => { profile.handleProfilePost(req, res, db) }); //本当は /profile/:id
 app.put('/image', (req, res) => { image.handleImage(req, res, db)});
 app.post('/imageurl', (req, res) => { image.handleApiCall(req, res)}); // create a new end point '/imageurl'
