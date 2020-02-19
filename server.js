@@ -15,8 +15,10 @@ const search = require('./controller/search');
 const button = require('./controller/button');
 const addComments = require('./controller/addComments');
 const allData = require('./controller/allData');
+
 const allSpot = require('./controller/allData');
-const authenticButton = require('./controller/authenticButton');
+const arrangButton = require('./controller/arrangeButton');
+
 const changeComments = require('./controller/changeData');
 const changeURL = require('./controller/changeData');
 const changeName = require('./controller/changeData');
@@ -55,7 +57,7 @@ app.use(cors());
 app.get('/', (req, res) => { res.send('it is working!') });
 
 app.post('/register', (req, res) => { register.handleRegister(req, res, db) });
-app.post('/insert', (req, res) => { insert.handleInsert(req, res, db) });
+app.post('/insert', (req, res) => { insert.handleInsert(req, res, db) }); //新しいデータベース
 app.post('/profile', (req, res) => { profile.handleProfilePost(req, res, db) }); //本当は /profile/:id
 app.put('/image', (req, res) => { image.handleImage(req, res, db)});
 app.post('/imageurl', (req, res) => { image.handleApiCall(req, res)}); // create a new end point '/imageurl'
@@ -67,8 +69,13 @@ app.put('/buttonD', (req, res) => { button.handleIineD(req, res, db)});
 app.put('/buttonWD', (req, res) => { button.handleWaruiineD(req, res, db)});
 app.put('/addcomments', (req, res) => { addComments.handleComments(req, res, db)});
 app.get('/allData', (req, res) => { allData.handleAllData(req, res, db)});
+//新しいデータベース
 app.get('/allSpot', (req, res) => { allSpot.handleAllSpot(req, res, db)}); //新しいデータベース
-app.put('/authenticButton', (req, res) => { authenticButton.handleAuthentic(req, res, db)});
+app.put('/authenticButton', (req, res) => { arrangButton.handleAuthentic(req, res, db)});
+app.put('/notauthenticButton', (req, res) => { arrangButton.handleNotAuthentic(req, res, db)});
+app.put('/goodButton', (req, res) => { arrangButton.handleGood(req, res, db)});
+app.put('/badButton', (req, res) => { arrangButton.handleBad(req, res, db)});
+
 app.get('/allUsers', (req, res) => { allData.handleAllUsers(req, res, db)});
 app.put('/changeComments', (req, res) => { changeComments.handleComments(req, res, db)});
 app.put('/changeURL', (req, res) => { changeURL.handleURL(req, res, db) });
