@@ -12,8 +12,6 @@ const handlePullData = (req,res, db)=> {
                     return (
                         res.json(location)
                     )
-                } else {
-                    res.status(400).json('no data')
                 }
             })
                 .catch(error => res.status(400).json('wrong credentials'))
