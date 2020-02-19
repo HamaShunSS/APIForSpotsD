@@ -8,11 +8,9 @@ const handlePullData = (req,res, db)=> {
         // .where(('lon', '<', (lon + degree)) && ('lon', '>', (lon - degree)) && ('lat', '<', (lat + degree)) && ('lat', '>', (lat - degree)) )
         .then(data => {
             data.filter(location => {
-                if ((location.lon < (lon + degree)) && (location.lon > (lon - degree)) && (location.lat < (lat + degree)) && (location.lat > (lat - degree))  ) {
                     return (
-                        res.json(location)
+                        res.json((location.lon < (lon + degree)) && (location.lon > (lon - degree)) && (location.lat < (lat + degree)) && (location.lat > (lat - degree)))
                     )
-                }
             })
                 .catch(error => res.status(400).json('wrong credentials'))
             })
