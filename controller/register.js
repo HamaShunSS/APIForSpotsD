@@ -58,7 +58,7 @@ const handleInsert =(req, res, db)=> {
         date: date,
         city: city,
         authentic: nan,
-        nonauthentic: nan,
+        notauthentic: nan,
         good: nan,
         bad: nan
     })
