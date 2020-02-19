@@ -5,7 +5,7 @@ const handlePullData = (req,res, db)=> {
         return res.status(400).json('no data');
     }
     db.select('*').from('spot')
-        .where('lon', '<', (lon + degree) && 'lon', '>', (lon - degree) && 'lat', '<', (lat + degree) && 'lat', '>', (lat - degree) )
+        .where(('lon', '<', (lon + degree)) && ('lon', '>', (lon - degree)) && ('lat', '<', (lat + degree)) && ('lat', '>', (lat - degree)) )
         .then(data => {
             if (data.length > 0){ // "if () {}" returns true or false
                 return res.json(data[0])
