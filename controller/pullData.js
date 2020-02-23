@@ -31,8 +31,18 @@ const handlePullData = (req,res, db)=> {
         // .catch(error => res.status(400).json('wrong credentials'))
 }
 
+const handlePullSharedInfo = (req,res, db)=> {
+    const { userid } = req.body;
+    db.select('*').from('spot').where('userid', '=', userid)
+        .then(infos => {
+            res.json(infos)
+        })
+        .catch(error => res.status(400).json('wrong credentials'))
+}
+
 
 
 module.exports = {
-    handlePullData: handlePullData
+    handlePullData: handlePullData,
+    handlePullSharedInfo: handlePullSharedInfo
 }

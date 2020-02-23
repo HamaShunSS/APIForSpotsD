@@ -96,6 +96,7 @@ app.post('/touroku', (req, res) => { touroku.handleTouroku(req, res, db, bcrypt)
 app.post('/signin', (req, res) => { signin.handleSignin(req, res, db, bcrypt);
     console.log(res)});
 app.post('/secondUI', (req, res) => { pullData.handlePullData(req, res, db)});
+app.post('/sharedInfo', (req, res) => { pullData.handlePullSharedInfo(req, res, db)});
 app.post('/sui', (req, res) => { sui.handleSUI(req, res, db) });
 app.post('/user', (req, res) => { user.handleUser(req, res, db) });
 app.del('/deleteInfo', (req, res) => { deleteInfo.handleDeleteInfo(req, res, db) });
