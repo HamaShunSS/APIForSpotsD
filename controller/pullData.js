@@ -12,7 +12,11 @@ const handlePullData = (req,res, db)=> {
                         (location.lon < (lon + degree)) && (location.lon > (lon - degree)) && (location.lat < (lat + degree)) && (location.lat > (lat - degree))
                     )
             })
+            if (fillterdData.length > 0 ) {
                 res.json(fillterdData)
+            } else {
+                return res.status(400).json('no data');
+            }
         })
         .catch(error => res.status(400).json('wrong credentials'))
 
