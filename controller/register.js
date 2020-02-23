@@ -51,7 +51,7 @@ const handleInsert =(req, res, db)=> {
         photo1: photo1,
         photo2: photo2,
         photo3: photo3,
-        comment: comment,
+        comment: comment + '|' + userid + '|' + by + '|' + usercountry,
         commentid: commentid,
         country: country,
         usercountry: usercountry,
