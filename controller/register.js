@@ -34,7 +34,7 @@ const handleRegister =(req, res, db)=> {
     }
 
 const handleInsert =(req, res, db)=> {
-    const { name, price, url, phone, location, photo1, photo2, photo3, lon, lat, bizid, comment, commentid, by, country, date, city, usercountry } = req.body;
+    const { name, price, url, phone, location, photo1, photo2, photo3, lon, lat, bizid, comment, commentid, userid, by, country, date, city, usercountry } = req.body;
     const nan = 'NaN'
     if (!name || !comment){
         return res.status(400).json('incorrect form submission');
@@ -55,6 +55,7 @@ const handleInsert =(req, res, db)=> {
         commentid: commentid,
         country: country,
         usercountry: usercountry,
+        userid: userid,
         by: by,
         date: date,
         city: city,
