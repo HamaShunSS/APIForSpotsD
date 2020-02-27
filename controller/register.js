@@ -63,6 +63,7 @@ const handleInsert =(req, res, db)=> {
         notauthentic: nan,
         good: nan,
         bad: nan,
+        badcomment: ''
     })
         .then
         (res.json('success'))
