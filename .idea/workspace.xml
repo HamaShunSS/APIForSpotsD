@@ -57,6 +57,7 @@
       <find>mixin</find>
       <find>axio</find>
       <find>node</find>
+      <find>changecomment</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
