@@ -174,7 +174,7 @@ const changeComment = (req, res, db)=> { // put is for update ex) update counts 
     const { id, newComment} = req.body;
     db('spot').where('id', '=', id)
         .update({
-            comments: newComment
+            comment: newComment
         })
         .returning('comment')
         .then
