@@ -182,6 +182,18 @@ const changeComment = (req, res, db)=> { // put is for update ex) update counts 
         .catch(err => res.status(400).json('unable to get entries'))
 }
 
+const changeCountryOfSpot = (req, res, db)=> { // put is for update ex) update counts for rank or update the profile
+    const { id, newCountry} = req.body;
+    db('spot').where('id', '=', id)
+        .update({
+            country: newCountry
+        })
+        .returning('country')
+        .then
+        (res.json('success'))
+        .catch(err => res.status(400).json('unable to get entries'))
+}
+
 module.exports = {
     handleComments: changeComments,
     handleURL: changeURL,
@@ -200,4 +212,5 @@ module.exports = {
     handleStatus: changeStatus,
     //new
     changeComment: changeComment,
+    changeCountryOfSpot: changeCountryOfSpot
 }

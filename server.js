@@ -79,6 +79,7 @@ app.put('/addcomment', (req, res) => { addComments.handleComment(req, res, db)})
 app.put('/addbadcomment', (req, res) => { addComments.handleBadComment(req, res, db)});
 app.del('/deleteSpot', (req, res) => { deleteInfo.handleDeleteSpot(req, res, db) });
 app.put('/changeComment', (req, res) => { changeComments.changeComment(req, res, db)});
+app.put('/changeCountryOfSpot', (req, res) => { changeComments.changeCountryOfSpot(req, res, db)});
 
 
 app.get('/allUsers', (req, res) => { allData.handleAllUsers(req, res, db)});
