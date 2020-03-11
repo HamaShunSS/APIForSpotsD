@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aaa2cde-df22-4655-8f99-9c1433af4dc8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/touroku.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/touroku.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spots-for-sjsu-students" beforeDir="false" afterPath="$PROJECT_DIR$/spots-for-sjsu-students" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spots-for-sjsu-students/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spots-for-sjsu-students/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spots-for-sjsu-students/controller/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/spots-for-sjsu-students/controller/register.js" afterDir="false" />
@@ -29,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/touroku.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+            <state relative-caret-position="138">
+              <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -47,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/signin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
+            <state relative-caret-position="230">
               <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
             </state>
           </provider>
@@ -285,12 +287,12 @@
       <workItem from="1583309358940" duration="190000" />
       <workItem from="1583539128771" duration="1976000" />
       <workItem from="1583717231602" duration="1072000" />
-      <workItem from="1583954701182" duration="4307000" />
+      <workItem from="1583954701182" duration="5159000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208938000" />
+    <option name="totallyTimeSpent" value="209790000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2189" y="31" width="851" height="797" extended-state="0" />
@@ -526,15 +528,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/signin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
+        <state relative-caret-position="230">
           <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/touroku.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        <state relative-caret-position="138">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
