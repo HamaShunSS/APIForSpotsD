@@ -11,11 +11,8 @@ const handleTouroku =(req, res, db, bcrypt)=> {
         country: country,
         status: status
     })
-    db.select('*').from('login')
-        .where('email', '=', email)
-        .then(data => {
-            res.json(data)
-        })
+        .then
+        (res.json({username, country, email, id}))
 }
 
 
