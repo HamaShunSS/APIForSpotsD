@@ -24,11 +24,11 @@ const handleSignin = (req,res, db, bcrypt)=> {
 
 const reset = (req,res, db, bcrypt)=> {
     const { email, username, password } = req.body;
+    const hash = bcrypt.hashSync(password);
     if (!email || !username ){
         return res.status(400).json('incorrect form submission');
     }
-    const hash = bcrypt.hashSync(password);
-    db.select('*').from('login')
+    db('login')
         .where('email', '=', email)
         .update({
             password: hash
