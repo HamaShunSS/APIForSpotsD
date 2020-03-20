@@ -28,14 +28,13 @@ const reset = (req,res, db, bcrypt)=> {
     if (!email || !username ){
         return res.status(400).json('incorrect form submission');
     }
-    db('login')
-        .where('email', '=', email)
+    db('login').where('email', '=', email)
         .update({
-            password: hash
+            hash: hash
         })
-        .returning('password')
+        .returning('hash')
         .then
-        (res.json('success'))
+        (res.json(hash))
         .catch(error => res.status(400).json('wrong credentials'))
 }
 
