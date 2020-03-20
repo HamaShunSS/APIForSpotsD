@@ -22,15 +22,16 @@ const handleSignin = (req,res, db, bcrypt)=> {
         .catch(error => res.status(400).json('wrong credentials'))
 }
 
-const reset = (req,res, db)=> {
+const reset = (req,res, db, bcrypt)=> {
     const { email, username, password } = req.body;
     if (!email || !username ){
         return res.status(400).json('incorrect form submission');
     }
+    const hash = bcrypt.hashSync(password);
     db.select('*').from('login')
         .where('email', '=', email)
         .update({
-            password: password
+            password: hash
         })
         .returning('password')
         .then
