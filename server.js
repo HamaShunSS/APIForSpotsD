@@ -80,6 +80,7 @@ app.put('/addbadcomment', (req, res) => { addComments.handleBadComment(req, res,
 app.del('/deleteSpot', (req, res) => { deleteInfo.handleDeleteSpot(req, res, db) });
 app.put('/changeComment', (req, res) => { changeComments.changeComment(req, res, db)});
 app.put('/changeCountryOfSpot', (req, res) => { changeComments.changeCountryOfSpot(req, res, db)});
+app.post('/reset', (req, res) => { signin.reset(req, res, db)});
 
 
 app.get('/allUsers', (req, res) => { allData.handleAllUsers(req, res, db)});

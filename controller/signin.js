@@ -22,8 +22,24 @@ const handleSignin = (req,res, db, bcrypt)=> {
         .catch(error => res.status(400).json('wrong credentials'))
 }
 
+const reset = (req,res, db)=> {
+    const { email, username, password } = req.body;
+    if (!email || !username ){
+        return res.status(400).json('incorrect form submission');
+    }
+    db.select('*').from('login')
+        .where('email', '=', email)
+        .update({
+            password: password
+        })
+        .returning('password')
+        .then
+        (res.json('success'))
+        .catch(error => res.status(400).json('wrong credentials'))
+}
 
 
 module.exports = {
-    handleSignin: handleSignin
+    handleSignin: handleSignin,
+    reset: reset
 }
